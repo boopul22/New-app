@@ -11,7 +11,11 @@ import time
 load_dotenv()
 
 # Configure Gemini API
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+if 'GEMINI_API_KEY' in st.secrets:
+    genai.configure(api_key=st.secrets['GEMINI_API_KEY'])
+else:
+    st.error('Error: GEMINI_API_KEY not found in Streamlit secrets')
+    st.stop()
 
 # Set page configuration
 st.set_page_config(

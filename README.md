@@ -9,10 +9,14 @@ A Streamlit application that uses Google's Gemini API to rewrite text in a more 
    ```bash
    pip install -r requirements.txt
    ```
-3. Create a `.env` file in the root directory and add your Gemini API key:
-   ```
-   GEMINI_API_KEY=your_api_key_here
-   ```
+3. Set up your secrets:
+   - For local development:
+     Create `.streamlit/secrets.toml` in the root directory and add:
+     ```toml
+     GEMINI_API_KEY = "your_api_key_here"
+     ```
+   - For Streamlit Cloud deployment:
+     Add your secrets in the Streamlit Cloud dashboard under "Deploy" -> "Secrets"
 
 ## Running the App
 
