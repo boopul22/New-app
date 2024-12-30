@@ -1,37 +1,37 @@
-# Text Rewriter App
+# Streamlit Text Rewrite App
 
-A Streamlit application that uses Google's Gemini API to rewrite text in a more natural, conversational style.
+A Streamlit application for text rewriting and analysis.
 
-## Setup
+## Local Development
 
-1. Clone this repository
-2. Install the required dependencies:
+1. Clone the repository
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Create a `.env` file in the root directory and add your Gemini API key:
+3. Create a `.env` file with your environment variables
+4. Run the app:
+   ```bash
+   streamlit run app.py
    ```
-   GEMINI_API_KEY=your_api_key_here
-   ```
 
-## Running the App
+## Deployment on Streamlit Cloud
 
-Run the following command in your terminal:
-```bash
-streamlit run app.py
-```
+1. Fork/push this repository to GitHub
+2. Visit [share.streamlit.io](https://share.streamlit.io)
+3. Deploy the app by connecting to your GitHub repository
+4. In the Streamlit Cloud dashboard:
+   - Set up your environment variables in "Advanced Settings" → "Secrets"
+   - Make sure to add all the necessary API keys and configurations
 
-The app will open in your default web browser.
+## Environment Variables Required
 
-## Usage
-
-1. Enter or paste your text in the input field
-2. Click the "Rewrite Text" button
-3. The rewritten version will appear below
+- `GOOGLE_API_KEY`: Your Google API key for the Generative AI service
+- Add any other environment variables your app needs
 
 ## Features
 
-- Clean, user-friendly interface
-- Real-time text rewriting using Gemini AI
-- Error handling and loading states
-- Responsive design 
+- Text rewriting
+- Usage statistics
+- History tracking
+- User authentication 
