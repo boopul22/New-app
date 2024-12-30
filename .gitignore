@@ -2,37 +2,20 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
 
-# Virtual Environment
+# Environment
+.env
+.venv
+env/
 venv/
 ENV/
 
-# Environment variables
-.env
-
-# IDE specific files
-.idea/
+# IDE
 .vscode/
-*.swp
-*.swo
+.idea/
 
-# OS specific files
+# System
 .DS_Store
-Thumbs.db 
+
+# Streamlit
+.streamlit/ 
