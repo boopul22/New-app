@@ -3,19 +3,21 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Environment
+# Environment variables
 .env
-.venv
-env/
+.env.*
+
+# Virtual Environment
 venv/
+env/
 ENV/
 
-# IDE
+# IDE specific files
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# System
+# OS specific files
 .DS_Store
-
-# Streamlit
-.streamlit/ 
+Thumbs.db 
